@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with my bot!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ai_page.css') }}">
+</head>
+
+<h1>This bot was trained on movie dialouge 🎬</h1>
+<h2>he's a little different</h2>
+<form method="POST">
+    <input name="user_input" style="width:300px;" autofocus>
+    <input type="submit" value="Ask!">
+</form>
+{% if response %}
+    <p><strong>MovieBot:</strong> {{ response }}</p>
+{% endif %}
+<h3>Use it yourself by calling <a href= {{url_for("let_user_use_ai")}}?sentence="hello">this link</a></h3>

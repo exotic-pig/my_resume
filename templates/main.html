@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{first_name}} | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_page.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{full_name}}</h1>
+        <p>Future Robotics Engineer | Coder | Dreamer 🚀</p>
+    </header>
+
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#work experience">Work experience</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a soon-to-be 9th grade student passionate about mechatronics, robotics, and AI! I love building things, especially software. My goal is to get into CMU and make the future better with robots. My working hours are 4 p.m. est to 6 p.m on weekdays and 9 a.m. est to 6 p.m. est on weekends.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong><a href="{{ url_for('ai') }}">MovieBot</a></strong> - AI chatbot trained on movie dialogue using NLP.</li>
+            <li><strong>This website</strong> - A flask application that includes an api and uses html and css to display my attributes.</li>
+            <li><strong><a href="https://github.com/exotic-pig/discord-bot">Discord bot</a></strong> - A Discord application which listened to commands from users and did actions like send memes.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>work experience</h2>
+        <ul>
+            <li>Reddit bot - I made a reddit bot to moderate a server. Freelance job.</li>
+        </ul>
+    </section>
+     <section id="work experience">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python (I can do pretty much anything with this :) )</li>
+            <li>Electronics (Arduino, Raspberry Pi)</li>
+            <li>Web Development (HTML, CSS)</li>
+            <li>Robotics (Mechanisms, Sensors)</li>
+            <li>Automations on the web (selenium web driver)</li>
+            <li>C++ I know how to utilize low level computing to make programs fast, while also using CMAKE</li>
+            <li>Java I'm starting to learn springboot</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: {{email}}</p>
+        <p>GitHub: <a href="https://github.com/exotic-pig" target="_blank">exotic-pig</a></p>
+        <p>Paypal: <a href="https://paypal.me/rohoboho">paypal.me/rohoboho</a></p>
+        <p>Phone number: {{phone}}</p>
+
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by {{first_name}}</p>
+    </footer>
+</body>
+</html>
