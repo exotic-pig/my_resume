@@ -34,7 +34,6 @@ def ai():
 def let_user_use_ai():
     return model.chatbot_response(request.args.get('sentence'))
 
-# Run the app
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-
+    port = int(os.environ.get("PORT", 5000))  # Use PORT from env or default to 5000
+    app.run(host="0.0.0.0", port=port)

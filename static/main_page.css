@@ -8,14 +8,14 @@
 /* Body Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f6fc;
+    background-color: black;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Section */
 header {
-    background-color: #007BFF;
+    background-color: rgb(15,30,40);
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -71,11 +71,12 @@ ul {
 }
 
 ul li {
-    background: white;
+    background: rgb(0, 30, 40);
     margin: 10px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:white;
 }
 
 ul li a {
@@ -96,3 +97,5 @@ footer {
     font-size: 0.9em;
     margin-top: 50px;
 }
+p {
+color:white;}
